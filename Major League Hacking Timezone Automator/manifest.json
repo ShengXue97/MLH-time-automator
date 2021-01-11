@@ -1,0 +1,27 @@
+{
+  "name": "Major League Hacking Timezone Automator",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "permissions": ["activeTab", "declarativeContent"],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/time16.png",
+      "32": "images/time32.png",
+      "48": "images/time48.png",
+      "128": "images/time128.png"
+    }
+  },
+  "icons": {
+    "16": "images/time16.png",
+    "32": "images/time32.png",
+    "48": "images/time48.png",
+    "128": "images/time128.png"
+  },
+  "manifest_version": 2
+}
