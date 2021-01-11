@@ -26,7 +26,6 @@ rows.forEach(row => {
 function convertDay(currentDay, dayDifference){
     const dayMappings = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
     
-    console.log(`${currentDay} ${dayDifference}`)
     var newDay = dayMappings[(dayMappings.indexOf(currentDay) + dayDifference) % 7];
     return newDay;
 }
@@ -41,7 +40,6 @@ function calcTime(date, offset, dayToCompare) {
     const nd = new Date(utc - (60000 * date.getTimezoneOffset()));
     // return time as a string
     const utcDate = new Date(utc);
-    console.log(`${nd} ${utcDate}`);
     const changedDay = convertDay(dayToCompare, nd.getDay() - date.getDay())
     const time = nd.toLocaleString().split(",")[1];
     return `${changedDay},${time}`;
